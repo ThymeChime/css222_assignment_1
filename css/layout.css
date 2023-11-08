@@ -1,0 +1,58 @@
+html {
+    width:100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+    nav {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
+body { 
+    min-height: 100px; 
+    margin: 0;
+}
+
+header { 
+    min-height:50px;
+}
+
+footer { 
+    min-height:50px;
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+body{ 
+    display:flex; 
+    flex-direction:column; 
+}
+
+article{ 
+    flex:1; 
+}
