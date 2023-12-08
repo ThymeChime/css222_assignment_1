@@ -1,58 +1,70 @@
-html {
-    width:100%;
+@font-face {
+  font-family: patua;
+  src: url(../font/PatuaOne-Regular.ttf);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  height: 100vh;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: patua;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #0A4C7B;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+header {
+  position: fixed;
+  background-color: #000e29;
+  height: 100px;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-main {
-    padding: 20px;
+
+.content-container {
+  padding-top: 140px;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-    header {
-        font-size: 24px;
-    }
-
-    nav {
-        font-size: 16px;
-    }
-
-    nav a {
-        margin: 5px;
-    }
-}
-body { 
-    min-height: 100px; 
-    margin: 0;
+.contact-form {
+  padding: 20px 20px 20px 20px;
+  margin-top: 140px;
+  height: 700px;
+  text-align: center;
+  background-color: #00236a;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header { 
-    min-height:50px;
+footer {
+  width: 100%;
+  background-color: #000e29;
+  bottom: 0;
+  margin: 0;
 }
 
-footer { 
-    min-height:50px;
-    position: fixed;
-    bottom: 0;
-    background-color: gray;
-    width: 100%;
-    text-align: center;
+.video-container{
+  background-color: #0095ff70;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px 0px 10px 0px;
 }
 
-body{ 
-    display:flex; 
-    flex-direction:column; 
+.review-container {
+  margin: 10px 0px 0px 0px;
+  background-color: aliceblue;
+  text-align: center;
 }
 
-article{ 
-    flex:1; 
-}
+

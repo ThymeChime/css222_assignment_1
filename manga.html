@@ -1,27 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manga</title>
-    <link rel="stylesheet" href="css\layout.css">
-    <link rel="stylesheet" href="css\index.css">
+    <title>GoAnime</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <script src="script/navtoggle.js"></script>
 </head>
 <body>
     <header>
-        <div class="header-logo">
-        <a href="index.html"><img class="siteLogo" src="images\logo-placeholder.png"></a>
+        <div class="logo-container">
+            <a href="index.html"><img src="images\basicanimego.png"></a>
         </div>
+
+    <div class="navbar">
         <nav>
-            <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="anime.html">Anime</a></li>
-            <li> <a href="manga.html">Manga</a></li>
-            <li> <a href="contact.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">&#9776;</button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="index.html">Home</a>
+                  <a href="anime.html">Anime</a>
+                  <a href="manga.html">Manga</a>
+                  <a href="review.html">Reviews</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+            </div> 
+            <ul id="myNav" class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="anime.html">Anime</a></li>
+                <li><a href="manga.html">Manga</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </nav>    
+    </div>
     </header>
-    manga
+    
+    <div class="content-container">
+        <section class="banner">
+            <div class="banner-text-container">
+                <h1>Manga</h1>
+            </div>
+            <div class="background-container">
+                <img class="banner-background" src="images\phos.jpeg">
+            </div>
+        </section>
+        </div>
+
+        <section class="web-table">
+            <h2>My Top 5 Mangas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>1</td>
+                        <td>Land of the Lustrous</td>
+                        <td>Action, Drama, Fantasy, Mystery</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>2</td>
+                        <td>Frieren: Beyond Journey's End</td>
+                        <td>Adventure, Drama, Fantasy</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>3</td>
+                        <td>Chainsaw Man</td>
+                        <td>Action, Fantasy</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>4</td>
+                        <td>Jujutsu Kaisen</td>
+                        <td>Action, Fantasy</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>5</td>
+                        <td>The Record of Vanitas</td>
+                        <td>Fantasy, Drama</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+    
+
+<footer>
+    <div class="footer-content">
+        <p>Copyright &#169; 2023 GoAnime</p>
+    </div>
+</footer>
 </body>
 </html>
